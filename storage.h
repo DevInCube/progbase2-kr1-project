@@ -52,19 +52,19 @@ virtual QVector<Record> getNamesByCeremonyAward(int ceremony, const QString & aw
 // children: films records with film strings
 //   each child: this film record with film string
 //   children: this film nominations
-virtual TreeNode * getCeremonyWithFullFilms(int ceremony) { return TreeNode(); }
+virtual TreeNode * getCeremonyWithFullFilms(int ceremony) { return nullptr; }
 
 // root is ceremony record
 // children: awards records with award strings
 //   each child: this award record with award string
 //   children: this award nominees
-virtual TreeNode * getCeremonyWithFullAwards(int ceremony) { return TreeNode(); }
+virtual TreeNode * getCeremonyWithFullAwards(int ceremony) { return nullptr; }
 
 // root is ceremony record
 // children: award records with winner name
 //   each child: this award record with award string and winner name
 //   children: all other nominees of the same award who lost
-virtual TreeNode * getCeremonyWithFullNominees(int ceremony) { return TreeNode(); }
+virtual TreeNode * getCeremonyWithFullNominees(int ceremony) { return nullptr; }
 
 };
 #endif
